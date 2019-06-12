@@ -1,10 +1,15 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
+import './app.scss'
+import Home from './home/Home'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 export default function App() {
   return (
     <div className="App">
-      This will be my finance app
+      <Header />
+      <Home />
+      <Footer />
     </div>
   );
 }
