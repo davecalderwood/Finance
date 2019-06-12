@@ -1,5 +1,6 @@
 body, html {
     background: rgb(243, 243, 243);
+    overflow: hidden;
 }
 .footer {
     width: 100%;
@@ -13,14 +14,9 @@ body, html {
     height: 50px;
     background: lightblue;
 }
-.leftNav {
-    height: 100vh;
-    width: 100px;
-    background: lightgray;
-}
 .links {
-    border: 1px solid black;
     width: 10%;
+    background: lightgray;
 }
 .mainApp {
     display: flex;
@@ -29,4 +25,6 @@ body, html {
 .routes {
     border: 1px solid black;
     width: 100%;
+    overflow-y: scroll;
+    padding-bottom: 70px;
 }
