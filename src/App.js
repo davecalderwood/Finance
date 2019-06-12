@@ -7,19 +7,6 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 
 export default class App extends Component {
-  constructor() {
-    super();
-    
-    // Initial state
-    this.state = { open: false };
-    
-  }
-
-  toggle() {
-    this.setState({
-      open: !this.state.open
-    });
-  }
     render() {
         return(
           <div className="App">

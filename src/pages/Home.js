@@ -1,11 +1,24 @@
 import React, { Component } from 'react';
 
 export default class Home extends Component {
-    render() {
-        return(
-            <div>
-                This is the home page
-            </div>
-        );
-    }
+    constructor() {
+		super();
+		this.state = {
+			display: true,
+		};
+	}	
+	
+	toggle() {
+		this.setState({
+			display: !this.state.display
+		});
+	}
+		
+	render() {		
+		return (
+			<div>
+				<button onClick={this.toggle.bind(this)}>Toggle</button>
+			</div>
+		)
+	}
 }
