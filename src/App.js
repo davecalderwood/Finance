@@ -11,23 +11,29 @@ export default function App() {
     <div className="App">
       <Header />
       <Footer />
+      
+    <div className="mainApp">
+      <Router>
+        <div className="links">
+          <Link to="/">
+                <div className="home">
+                    <h3>Home</h3>
+                </div>
+              </Link>
 
-    <Router>
-      <Route exact path="/" component={Home} />
-      <Route path="/finance" component={Finance} />
-
-      <Link to="/">
-            <div className="home">
-                <h3>Home</h3>
-            </div>
-          </Link>
-
-        <Link to="/finance">
-          <div className="finance">
-            <h3>Finance</h3>
+            <Link to="/finance">
+              <div className="finance">
+                <h3>Finance</h3>
+              </div>
+            </Link>
           </div>
-        </Link>
-      </Router>
+
+          <div className="routes">
+            <Route exact path="/" component={Home} />
+            <Route path="/finance" component={Finance} />
+          </div>
+        </Router>
+      </div>
     </div>
   );
 }

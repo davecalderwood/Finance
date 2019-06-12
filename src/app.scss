@@ -18,3 +18,15 @@ body, html {
     width: 100px;
     background: lightgray;
 }
+.links {
+    border: 1px solid black;
+    width: 10%;
+}
+.mainApp {
+    display: flex;
+    height: 100vh;
+}
+.routes {
+    border: 1px solid black;
+    width: 100%;
+}
