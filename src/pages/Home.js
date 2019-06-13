@@ -5,23 +5,6 @@ export default class Home extends Component {
 		return (
 			<div className="home">
 				Home
-				<p>Home</p>
-				<p>Home</p>
-				<p>Home</p>
-				<p>Home</p>
-				<p>Home</p>
-				<p>Home</p>
-				<p>Home</p>
-				<p>Home</p>
-				<p>Home</p>
-				<p>Home</p>
-				<p>Home</p>
-				<p>Home</p>
-				<p>Home</p>
-				<p>Home</p>
-				<p>Home</p>
-				<p>Home</p>
-				<p>Home</p>
 			</div>
 		)
 	}

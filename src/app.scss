@@ -30,9 +30,9 @@ body, html {
     padding-bottom: 70px;
 }.home, .finance {
     width: 98%;
-    border: 1px solid black;
     margin: 0 auto;
     margin-top: 75px;
+    font-size: 22px;
 }
 /* --------------------------------------------------- Menu -------------------------------------------------------------- */
 ul {
@@ -44,9 +44,8 @@ ul {
         margin-bottom: 30px;
         font-size: 20px;
       }
-  }
-
-  .header {
+  }  
+.header {
     position: fixed;
     top: 0;
     left: 0;
