@@ -3,8 +3,7 @@ import './app.scss'
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from './pages/Home'
 import Finance from './pages/Finance'
-// import Header from './components/Header'
-// import Footer from './components/Footer'
+import Profile from './pages/Profile'
 
 export default class App extends Component {
   constructor(props){
@@ -27,8 +26,6 @@ export default class App extends Component {
       <div>
         <Router>
         <header className="header">
-          <div className="navContainer">
-            {/* <span className="logo" style={{color:"#fff"  , fontStyle:"italic" , fontWeight:"400"}}></span> */}
             <nav>
               <ul
                 className="mainNav"
@@ -40,23 +37,24 @@ export default class App extends Component {
                 <li>
                   <a href="/finance">FINANCE</a>
                 </li>
+                <li>
+                  <a href="/profile">PROFILE</a>
+                </li>
               </ul>
             </nav>
             <button
               onClick = {this.handleSidebar}
               className={`navToggle ${this.state.sideBar ? "open" : null}`}>
-              <span />
-              <span />
-              <span />
+              <span/><span/><span/>
             </button>
             <div
               onClick={this.handleSidebar.bind(this)}
               className={`overlay ${this.state.sideBar ? "open" : ""}`}
               />
-          </div>
         </header>
           <Route exact path="/" component={Home} />
           <Route path="/finance" component={Finance} />
+          <Route path="/profile" component={Profile} />
 
         </Router>
       </div>
